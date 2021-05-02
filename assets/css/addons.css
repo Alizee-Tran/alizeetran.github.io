@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+
+/* Animation */
+.typewriter h1 {
+  position:relative;
+  top:50%;
+  width: 24em;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  font-size: 180%;
+  text-align:center;
+  white-space:nowrap;
+  border-right: 2px solid orange;
+  overflow:hidden;
+  animation: 
+    typewriter 5s steps(40,end) 1s 1 normal both,
+    blinkTextCursor 1s steps(44) infinite normal;
+}
+
+@keyframes typewriter{
+  from {width: 0;}
+  to {width: 100%}
+}
+@keyframes blinkTextCursor{
+  from, to {border-color:transparent}
+  50% {border-color: orange;}
+}
